@@ -1,1 +1,0 @@
-# nicoleavalos.github.io
