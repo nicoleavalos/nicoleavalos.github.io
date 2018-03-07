@@ -16,7 +16,7 @@ march.setAttribute("class", "right-visible");
 		}
 
     var warren = document.getElementById('warren');
-		var warrenoffset = warren.offsetTop - innerHeight-65;
+		var warrenoffset = warren.offsetTop - innerHeight-550;
 		if (pageYOffset > warrenoffset) {
 warren.setAttribute("class", "left-visible");
 		}
