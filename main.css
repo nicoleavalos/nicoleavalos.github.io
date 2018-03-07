@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Amatic SC', cursive;
+  background: #f6ecca;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  line-height: 150%;
+}
+
+ /* INTRO SECTION
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+  color: #213444;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.container img {
+  width: 100px;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline .line {
+  width: 5px;
+  background-color: #213444;
+  height: 3000px;
+  position: absolute;
+  left: 650px;
+  top: 600px;
+  margin-bottom: 50px;
+}
+
+.timeline .hline {
+  height: 5px;
+  background-color: #213444;
+  position: absolute;
+  width: 100px;
+  left: -100px;
+  top: 0px;
+  padding: 0;
+}
+.timeline .hline2{
+height: 5px;
+background-color: #213444;
+position: absolute;
+width: 100px;
+left: 355px;
+top: 0px;
+padding: 0;
+}
+
+.timeline li {
+  width: 450px;
+}
+
+
+.timeline ul {
+  background: #213444;
+  padding: 50px 0px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: absolute;
+  margin-left: 50px;
+  padding-top: 50px;
+  width: 450px;
+
+}
+
+
+.timeline ul li div {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #213444;
+}
+
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+ #trump {
+   top: 900px;
+ }
+
+#trump img {
+  position: relative;
+  left: 10px;
+  border: 5px solid #F45B69;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#march {
+  top: 1285px;
+}
+
+#march img {
+  position: relative;
+  left: 10px;
+  border: 5px solid #F45B69;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#warren {
+  top: 2000px;
+}
+#fowler {
+top: 2482px;
+}
+
+#fowler img {
+  position: relative;
+  left: 32px;
+  border: 5px solid #F45B69;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#google {
+  top: 2813px;
+}
+
+#google img {
+  position: relative;
+  left: 35px;
+  border: 5px solid #F45B69;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#metoo {
+  top: 3256px;
+}
+
+#timesup {
+  top: 3500px;
+}
+
+#timesup img {
+  position: relative;
+  left: 37px;
+  border: 5px solid #F45B69;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: #F45B69;
+		border: 0px;
+	}
+
+time {
+  color: #F45B69;
+  font-size: 20px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.left {
+  left: 700px;
+  opacity: 0;
+
+}
+
+.left-visible {
+  left: 700px;
+  opacity: 1;
+  transition-duration: .7s;
+
+}
+
+.right {
+  left: 150px;
+  opacity: 0;
+}
+
+.right-visible {
+  left: 150px;
+  opacity: 1;
+  transition-duration: .7s;
+}
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+
+	width: 940px;
+	height: 30px;
+	margin: 10px 10px 20px 10px;
+  padding-top: 20px;
+	float: left;
+	position: absolute;
+  top: 3570px;
+	clear: both;
+  color: #213444;
+}
