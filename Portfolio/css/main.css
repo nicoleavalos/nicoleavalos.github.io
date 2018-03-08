@@ -20,7 +20,7 @@ body {
   width: auto;
   height: 35px;
   margin: 0px 0px 0px 0px;
-  padding: 0px;
+  padding: 5px;
   float:left;
   position: relative;
   color: #181617;
@@ -31,7 +31,7 @@ body {
   width: auto;
   height: 35px;
   margin: 0px 0px 0px 0px;
-  padding: 0px;
+  padding: 5px;
   float:right;
   position:relative;
   text-align: right;
@@ -49,6 +49,7 @@ body {
   height: 45px;
   margin: 0px;
   display:block;
+	padding: 5px;
 }
 .bio p {
 font-family: 'Montserrat', sans-serif;
