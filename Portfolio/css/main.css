@@ -47,7 +47,7 @@ body {
 .bio {
   width: auto;
   height: 45px;
-  margin: 5px;
+  margin: 20px;
   display:block;
 	
 }
@@ -70,8 +70,9 @@ font-size: 15px;
     color: #181617;
 		border: 0px;
 	}
-
-
+.portfolio {
+ margin-top: 30px;
+}
 .bullet2 {
 
 	margin: 0px 18px 0px 15px;
