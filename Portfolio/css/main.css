@@ -153,28 +153,26 @@ padding-top; 10px;
 		border: 0px;
 	}
 .gizmo {
-  width: 450px;
+  width: 600px;
   height: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 15px 15px;
 float:right;
 }
 .teddy {
-  width: 450px;
+  width: 600px;
   height: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 15px 15px;
 	float: left;
 }
 .family {
-  width:450px;
+  width:600px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
 	float: right;
 }
 .girls {
-  width:450px;
+  width:600px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
