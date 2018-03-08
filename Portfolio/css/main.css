@@ -18,9 +18,7 @@ body {
 
 .title {
   width: auto;
-  height: 35px;
-  margin: 5px 0px 5px 0px;
-  padding: 5px;
+  height: auto;
   float:left;
   position: relative;
   color: #181617;
@@ -29,8 +27,8 @@ body {
 
 .main-nav {
   width: auto;
-  height: 35px;
-  margin: 5px 0px 5px 0px;
+  height: auto;
+  margin: 0px 0px 0px 0px;
   padding: 5px;
   float:right;
   position:relative;
@@ -46,7 +44,7 @@ body {
 
 .bio {
   width: auto;
-  height: 45px;
+  height: auto;
   margin: 20px;
   display:block;
 	
@@ -60,7 +58,7 @@ font-size: 15px;
 	width: auto;
 	height: 53px;
 	margin: 10px 0px 20px 0px;
-	padding: 10px;
+	padding: 0px;
   border-bottom: 3px solid #000;
 }
 
@@ -80,7 +78,7 @@ font-size: 15px;
 }
 .footer {
 
-	width: 940px;
+	width: auto;
 	height: 30px;
 	margin: 10px 10px 20px 10px;
   padding-top: 20px;
@@ -101,8 +99,7 @@ padding-top; 10px;
   color: #2b2b2b;
 }
 .port-thumb img {
-  padding-left: 15px;
-  padding-right: 15px;
+ padding: 15px 15px 15px 15px;
 }
 .right {
   float: right;
