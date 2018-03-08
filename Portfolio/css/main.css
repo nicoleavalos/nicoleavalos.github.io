@@ -157,18 +157,21 @@ padding-top; 10px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+float: right;
 }
 .teddy {
   width: 450px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+	float: left;
 }
 .family {
   width:450px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+	float: left;
 }
 .girls {
   width:450px;
@@ -176,6 +179,7 @@ padding-top; 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-right: 12px;
+	float: left;
 }
 .contact-body p{
   font-family: 'Montserrat', sans-serif;
