@@ -10,14 +10,14 @@ body {
 
 .container {
 
-  width: 1000px;
+  width: auto;
   margin: 50px auto 50px auto;
 	padding: 30px;
   background-color: #fff7f8
 }
 
 .title {
-  width: 500px;
+  width: auto;
   height: 35px;
   margin: 0px 0px 0px 0px;
   padding: 0px;
@@ -28,7 +28,7 @@ body {
 }
 
 .main-nav {
-  width: 300px;
+  width: auto;
   height: 35px;
   margin: 0px 0px 0px 0px;
   padding: 0px;
@@ -45,7 +45,7 @@ body {
 }
 
 .bio {
-  width: 940px
+  width: auto;
   height: 45px;
   margin: 0px;
   display:block;
@@ -56,7 +56,7 @@ font-size: 15px;
 }
 
 .header {
-	width: 940px;
+	width: auto;
 	height: 53px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
