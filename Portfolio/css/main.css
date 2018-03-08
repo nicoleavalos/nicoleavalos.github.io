@@ -157,7 +157,7 @@ padding-top; 10px;
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
-float: right;
+float:right;
 }
 .teddy {
   width: 450px;
@@ -186,4 +186,7 @@ float: right;
   font-size: 15px;
   text-align: center;
   font: #000;
+}
+.col-md-3 img {
+float: left;
 }
