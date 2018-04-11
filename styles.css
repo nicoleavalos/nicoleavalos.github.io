@@ -1,0 +1,130 @@
+html {
+  font-family: helvetica;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Amatic SC', cursive;
+  background: #F45B69;
+  color: #213444;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  line-height: 150%;
+}
+
+article {
+ display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+span {
+ padding-left: 30px;
+}
+article .text {
+  width: 100%;
+  margin: 0px 30px 20px 30px;
+  line-height: 1.5em;
+  padding-top: 1em;
+}
+article .text3 {
+  width: 100%;
+  margin: -10px 30px 20px 30px;
+  line-height: 1.5em;
+  padding-top: 1em;
+}
+.text3 p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  background: #f6ecca;
+  padding:13px;
+  margin-top: 20px;
+}
+.text h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 37px;
+  border-bottom: 3px dotted;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+.text p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+  background: #f6ecca;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom:13px;
+
+
+}
+
+article .text2 {
+  width: 100%;
+  margin: 30px;
+  line-height: 1.5em;
+  border-top: 3px dotted;
+  padding-top: 7px;
+
+}
+
+.text2 p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  background: #f6ecca;
+  padding:13px;
+  margin-top: 20px;
+}
+#viz_holder {
+  display: flex;
+  margin: 0px 30px 0px 30px;
+  width: 100%;
+  flex-grow: 1;
+  border-top: 3px dotted;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 3px dotted;
+
+}
+#viz_holder2 {
+  display: flex;
+  margin: 0px 30px 0px 30px;
+  width: 100%;
+  flex-grow: 1;
+  border-top: 3px dotted;
+  padding-top: 25px;
+
+}
+
+#viz {
+  height: 900px;
+  width: 100%;
+  align-content:center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#bargraph{
+  height: 800px;
+  width: 100%;
+  align-content:center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.footer {
+	width: 100%;
+	height: 10px;
+	margin: 5px 30px;
+  padding-top: 5px;
+	float: left;
+	position: relative;
+  color: #213444;
+}
