@@ -167,3 +167,4 @@ var drawPlot = function(category) {
   })
 
 } 
+drawPlot("all");
