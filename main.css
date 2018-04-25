@@ -53,25 +53,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.timeline .hline {
-  height: 5px;
-  background-color: #213444;
-  position: absolute;
-  width: 100px;
-  left: -100px;
-  top: 0px;
-  padding: 0;
-}
-.timeline .hline2{
-height: 5px;
-background-color: #213444;
-position: absolute;
-width: 100px;
-left: 355px;
-top: 0px;
-padding: 0;
-}
-
 .timeline li {
   width: 450px;
 }
@@ -91,7 +72,6 @@ padding: 0;
 
 }
 
-
 .timeline ul li div {
   position: absolute;
   bottom: 0;
@@ -107,6 +87,7 @@ time {
   font-weight: bold;
   margin-bottom: 8px;
 }
+
  #trump {
    top: 900px;
  }
