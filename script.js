@@ -1,170 +1,110 @@
-/****
 
-  First, we're going to write a function to draw our plot. We can call this function when the page loads and also when the user filters the content.
+/* timeline events will pop up when user scrolls
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  Our drawPlot() function will take one parameter -- the category we want to show.
+  var documentHeight, scrollPercent;
 
-****/
+  var updateScroll = function(event) {
+      documentHeight = document.body.scrollHeight - innerHeight; // innerHeight is the height of the window.
+      scrollPercent = (pageYOffset / documentHeight) * 100;
 
-var xValue=['83%','74%','70%','69%','65%','63%','61%','61%','60%','60%','59%','59%','59%','58%','58%','56%','54%','54%','51%','49%','46%','42%','39%','37%', ];
+      var trump = document.getElementById('trump');
+      var trumpoffset = trump.offsetTop - innerHeight-65;
+      if (pageYOffset > trumpoffset) {
+    trump.setAttribute("class", "left-visible");
+      }
+  		var march = document.getElementById('march');
+  		var marchoffset = march.offsetTop - innerHeight-65;
+  		if (pageYOffset > marchoffset) {
+  march.setAttribute("class", "right-visible");
+  		}
 
-var feminist = {
-  y: ['India ', 'China ', 'Italy ', 'South Africa ', 'France ', 'Spain ', 'Sweden ', 'Mexico ', 'Serbia ', 'Canada ', 'Great Britian ', 'Argentina ', 'Belgium ', 'Turkey ', 'Poland ', 'Brazil ', 'South Korea ' , 'Hungary ' , 'Japan ','Russia ','Germany ',], // y is major category
-  x: [83,74,70,69,65,63,61,61,60,60,59,59,59,58,58,56,54,54,51,49,46,42,39,37, ], // x is unemplyment rate
-  type: 'bar',
-  text: xValue,
-  textposition: 'auto',
-  hoverinfo: 'none',
-  marker: {
-    color: '#213444',
-    opacity: .9,
+      var warren = document.getElementById('warren');
+  		var warrenoffset = warren.offsetTop - innerHeight-550;
+  		if (pageYOffset > warrenoffset) {
+  warren.setAttribute("class", "left-visible");
+  		}
+      var fowler = document.getElementById('fowler');
+  		var fowleroffset = fowler.offsetTop - innerHeight-65;
+  		if (pageYOffset > fowleroffset) {
+  fowler.setAttribute("class", "right-visible");
+  		}
+      var google = document.getElementById('google');
+  		var googleoffset = google.offsetTop - innerHeight-65;
+  		if (pageYOffset > googleoffset) {
+  google.setAttribute("class", "left-visible");
+  		}
+      var metoo = document.getElementById('metoo');
+      var metoooffset = metoo.offsetTop - innerHeight-65;
+      if (pageYOffset > metoooffset) {
+  metoo.setAttribute("class", "right-visible");
+      }
+      var timesup = document.getElementById('timesup');
+      var timesupoffset = timesup.offsetTop - innerHeight-65;
+      if (pageYOffset > timesupoffset) {
+  timesup.setAttribute("class", "left-visible");
+      }
+      var speech = document.getElementById('speech');
+      var speechoffset = speech.offsetTop - innerHeight-65;
+      if (pageYOffset > speechoffset) {
+  timesup.setAttribute("class", "speech-visible");
+      }
+  }
 
-  },
-  name: 'Feminist Rate',
-  orientation: 'h',
+  addEventListener("scroll", updateScroll);
 
-};
+  /* Video will play when user scrolls
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  var video = document.getElementById('video1'), fraction = 0.8;
 
-// Create the data object as an array of our data series objects:
-var data = [feminist];
+             function checkScroll() {
+                 var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                 b = y + h, //bottom
+                 visibleX, visibleY, visible;
 
-// The layout object provides options for how our visualization will appear:
-var layout = {
-  title:'% of Adults 18-64 Who Identify As Feminist',
-  titlefont: {
-      size: 18,
-      color: '#213444'
-    },
-  xaxis: {tickfont: {
-      size: 11,
-      color: '#213444'
-    }},
-  yaxis: {
-    tickfont: {
-      size: 11,
-      color: '#213444'
-    }
-  },
-  showlegend: false,
-  margin: {
-    l: 260
-  },
-  font: {
-      family: 'Arial, sans-serif',
-      size: 10,
-      color: "#F45B69",
-    }
+                 visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                 visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                 visible = visibleX * visibleY / (w * h);
+
+                 if (visible > fraction) {
+                     video.play();
+                 } else {
+                     video.pause();
+                 }
+             }
+
+             checkScroll();
+             window.addEventListener('scroll', checkScroll, false);
+             window.addEventListener('resize', checkScroll, false);
+
+
+/* Slideshow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-var options = {
- staticPlot: true, // disable zoom, save and other toolbar options
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-Plotly.newPlot('bargraph', data, layout, options);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var drawPlot = function(category) {
-
-  Plotly.d3.csv('dataviz.csv', function(err, rows){
-
-
-    /***
-    This function is useful for returning an array of values corresponding to a column in your CSV file. It's not built in to PLotly, so you have to declare it as follows:
-    ***/
-    var unpack = function(rows, key) {
-      return rows.map(function(row) { return row[key]; });
-    }
-
-
-    console.log(rows);
-
-    /***
-    If the category variable doesn't equal "all", we'll filter our rows.
-    ***/
-
-
-
-
-
-    /*** Now that we know how to pull the data from a CSV, we can create our data objects as we've done before: ***/
-    var country = {
-      // x and y are arrays of numeric values, so we can create those using unpack().
-      x: unpack(rows, 'advocate'),
-      y: unpack(rows, 'inequality'),
-      type: 'scatter', // the type of plot you're producing. Scatter is used to plot points with x and y values
-      mode: 'markers+text', // possible modes: markers, markers+text, lines
-      marker: { //marker object sets size and color for points
-          size: 7,
-          color: ["#213444","#213444","#213444","#213444","#213444","#213444","#213444","#213444","#213444","#213444","#213444","#213444","#F45B69","#213444","#213444","#F45B69","#F45B69","#213444","#213444","#213444","#213444","#F45B69","#213444","#213444","#213444","#213444","#213444","#213444","#213444"],
-              },
-      text: unpack(rows, 'Country'), // If specified, this is the text that pops up on hover. If not specified, the text is the y-value for the point
-      textposition: 'top center',
-
-      name: 'Country'
-    };
-
-
-
-
-    /*** Now that we've created our data objects using our CSV, we just create the visualization as we've done before: ***/
-
-    // Create the data object as an array of our data series objects:
-    var data = [country];
-
-    // The layout object provides options for how our visualization will appear:
-    var layout = {
-      showlegend: false,
-      hovermode: true, // if false, disables the hover text for the entire plot
-      xaxis: {
-       title: 'Population of Active Women Who Advocate/Support Equal Opportunities For Women (%)'
-
-      },
-      yaxis: {
-       title: 'Population of Women Who Believe There Is Gender Inequality (%)'
-      },
-      font: {
-      family: 'Arial, sans-serif',
-      size: 12,
-      color: '#213444',
-    }
-    }
-
-    var options = {
-     displayModeBar: true, // disable zoom, save and other toolbar options.
-    modeBarButtonsToRemove: [
-          'sendDataToCloud',
-          'pan',
-          'pan2d',
-          'autoScale2d',
-          'lasso2d',
-          'autoScale2d',
-          'resetScale2d',
-          'toggleSpikelines',
-      ]
-    }
-
-
-    Plotly.newPlot('viz', data, layout, options);
-
-
-
-
-  })
-
-} 
-drawPlot("all");
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
