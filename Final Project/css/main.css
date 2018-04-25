@@ -1,0 +1,183 @@
+body {
+	font-size: 15px;
+  font: 400 15px/1.2 'Leckerli One', Helvetica, sans-serif;
+  color: #000;
+	color: #181617;
+	margin: 0px;
+	padding: 0px;
+  background-color: #fff
+}
+
+.container {
+
+  width: 1000px;
+  margin: 50px auto 50px auto;
+	padding: 30px;
+  background-color: #fff7f8
+}
+
+.title {
+  width: 500px;
+  height: 35px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  float:left;
+  position: relative;
+  color: #181617;
+  font-size: 15px;
+}
+
+.main-nav {
+  width: 300px;
+  height: 35px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  float:right;
+  position:relative;
+  text-align: right;
+  color: #181617;
+  font-size: 15px;
+}
+.main-nav a:hover {
+
+  color: #AA9593;
+  border: 0px;
+}
+
+.bio {
+  width: 940px
+  height: 45px;
+  margin: 0px;
+  display:block;
+}
+.bio p {
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+}
+
+.header {
+	width: 940px;
+	height: 53px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+  border-bottom: 3px solid #000;
+}
+
+.header a:link,
+.header a:visited,
+.header a:hover {
+    color: #181617;
+		border: 0px;
+	}
+
+
+.bullet2 {
+
+	margin: 0px 18px 0px 15px;
+
+}
+.footer {
+
+	width: 940px;
+	height: 30px;
+	margin: 10px 10px 20px 10px;
+  padding-top: 20px;
+	float: left;
+	position: relative;
+	clear: both;
+}
+.port-thumb img:hover {
+  opacity: .7;
+}
+.port-thumb{
+  float: left;
+}
+.portfolio-header {
+  text-align: center;
+  font: 400 15px/1.2 'Leckerli One', Helvetica, sans-serif;
+  color: #2b2b2b;
+}
+.port-thumb img {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.right {
+  float: right;
+  padding-right: 175px;
+}
+
+.left {
+  float: left;
+  padding-left: 175px;
+}
+.center {
+  padding-left: 325px;
+  padding-right: 325px;
+}
+.nicole {
+  width: 600px;
+  height: auto;
+  margin-left: 175px;
+  margin-right: 200px;
+}
+.media-heading {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.contact {
+  width: 500px;
+  height: auto;
+  margin-left: 225px;
+  margin-right: 200px;
+}
+.contactinfo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+.media-body p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 175px;
+  margin-right: 175px;
+  text-indent: 50px;
+}
+.contact-body p:link,.contact-body a:visited,
+.contact-body a:hover {
+    color: #181617;
+		border: 0px;
+	}
+.gizmo {
+  width: 450px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.teddy {
+  width: 450px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.family {
+  width:450px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.girls {
+  width:450px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+}
+.contact-body p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  font: #000;
+}
