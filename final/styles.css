@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Amatic SC', cursive;
+  background: #F8E7E7;
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 150%;
+}
+
+.firstcharacter {
+color: black;
+float: left;
+font-family: 'Amatic SC', cursive;
+font-size: 120px;
+line-height: 92px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+padding-bottom: 3px;
+}
+
+.first{
+  padding-right: 25%;
+  padding-left: 25%;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+
+article {
+  padding-right: 25%;
+  padding-left: 25%;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+article p {
+  padding-top: 20px;
+  font-size: 22px;
+  line-height: 150%;
+
+}
+
+.container {
+  padding-right: 25%;
+  padding-left: 25%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: black;
+    line-height: 1.5rem;
+}
+video {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ /* INTRO SECTION
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background-image: img('united.jpg');
+  background-repeat: no-repeat;
+  height: -webkit-fill-available;
+  width: 100%;
+  border-bottom: 5px solid #403F4C;
+}
+.intro h1 {
+  padding: 26px;
+  font-size: 70px;
+  text-align: center;
+  background-color: #403F4C;
+  color: #fff;
+  padding-bottom: 10px;
+  width: 90%;
+  opacity: .8;
+}
+.centered-top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: black;
+    line-height: 1.5rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  height: -webkit-fit-content;
+}
+
+.timeline .line {
+  width: 5px;
+  background-color: #403F4C;
+  height: 3430px;
+  position: absolute;
+  left: 50%;
+}
+
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  padding-top: 50px;
+  width: 300px;
+
+}
+
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: #403F4C;
+}
+
+
+time {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #C97B84;
+  font-size: 15px;
+  border-bottom: 1.5px solid #C97B84;
+}
+
+
+#trump img {
+  position: relative;
+  left: 18px;
+  border: 5px solid #C97B84;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#march img {
+  position: relative;
+  left: 15px;
+  border: 5px solid #C97B84;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#fowler img {
+  position: relative;
+  left: 18px;
+  border: 5px solid #C97B84;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+#google img {
+  position: relative;
+  left: 19px;
+  border: 5px solid #C97B84;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+
+#timesup img {
+  position: relative;
+  left: 18px;
+  border: 5px solid #C97B84;
+  margin-top: 7px;
+  padding: 4px;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: #FCB5B5;
+		border: 0px;
+	}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.left {
+  left: 498px;
+  opacity: 0;
+
+}
+
+.left-visible {
+  left: 53%;
+  opacity: 1;
+  transition-duration: .7s;
+
+}
+
+.right {
+  left: 118px;
+  opacity: 0;
+}
+
+.right-visible {
+  left: 27%;
+  opacity: 1;
+  transition-duration: 1.7s;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+	width: 100%;
+	height: 10px;
+	margin: 5px 30px;
+  padding-top: 5px;
+	float: left;
+	position: relative;
+  color: #213444;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+
+/* Slideshow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.slideshow-container {
+  padding-right: 25%;
+  padding-left: 25%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
